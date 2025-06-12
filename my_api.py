@@ -2,7 +2,7 @@ import pymongo
 import pandas as pd
 
 # Configuração da conexão com o MongoDB
-mongo_uri = "mongodb+srv://admDB:eOX5boI6o8gcF90j@cluster0.ozsm1jh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "mongodb+srv://login:password@cluster0.ozsm1jh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 database_name = "vulnerability_db"
 collection_name = "scan_results"
 output_csv = "dados_mongodb.csv"
@@ -29,4 +29,4 @@ df.to_csv(output_csv, index=False, encoding='utf-8')
 print(df)
 
 # Fechar a conexão com o MongoDB
-client.close()
+client.close() 
